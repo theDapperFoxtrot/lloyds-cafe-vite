@@ -328,14 +328,32 @@ body {
 .lloyd-portrait-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn 1s;
 }
 .lloyd-portrait-container h1 {
-  position: absolute;
-  bottom: 35rem;
   text-align: center;
+  color: #fff;
+}
+.lloyd-portrait-container h1 span {
+  display: block;
+  color: #258132;
 }
 
-.lloyd-portrait {
-  position: absolute;
-  bottom: 0;
+.hidden {
+  display: none;
+}
+
+.fade-in {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

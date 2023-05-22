@@ -30,15 +30,33 @@ body {
 .lloyd-portrait-container {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	animation: fadeIn 1s;
 
 	h1 {
-		position: absolute;
-		bottom: 35rem;
 		text-align: center;
+		color: #fff;
+		span {
+			display: block;
+			color: $primary-color;
+		}
 	}
 }
 
-.lloyd-portrait {
-	position: absolute;
-	bottom: 0;
+.hidden {
+	display: none;
+}
+
+.fade-in {
+	animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }

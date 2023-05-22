@@ -1,6 +1,17 @@
 import "./style/style.css";
 
 function App() {
+	window.addEventListener("scroll", function () {
+		// Get the distance from the top of the page
+		const distanceFromTop = window.scrollY;
+
+		// Check if the user has scrolled to the desired section
+		if (distanceFromTop > 100) {
+			// Add class to element to trigger animation
+			document.querySelector(".my-element").classList.add("animate");
+		}
+	});
+
 	return (
 		<>
 			{/* Video element used for looping background (simulating the effect of a gif) */}
@@ -19,11 +30,13 @@ function App() {
 			</div>
 			<main>
 				<header>
-					<img
-						className="lloyds-logo"
-						src="assets/img/lloyds-320px.jpg"
-						alt="Lloyd's Cafe & Bakery"
-					/>
+					<a href="index.html">
+						<img
+							className="lloyds-logo fade-in"
+							src="assets/img/lloyds-320px.jpg"
+							alt="Lloyd's Cafe & Bakery"
+						/>
+					</a>
 					<nav>
 						<ul>
 							<li>
@@ -38,8 +51,10 @@ function App() {
 						</ul>
 					</nav>
 				</header>
-				<div className="lloyd-portrait-container">
-					<h1>Lloyd&apos;s Cafe & Bakery</h1>
+				<div className="lloyd-portrait-container hidden">
+					<h1>
+						<span>Lloyd&apos;s</span> Cafe & Bakery
+					</h1>
 					<img
 						className="lloyd-portrait"
 						src="assets/img/lloyd.jpg"
