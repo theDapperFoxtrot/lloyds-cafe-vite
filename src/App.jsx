@@ -19,7 +19,11 @@ function App() {
 			</div>
 			<main>
 				<header>
-					<h1>Lloyd&apos;s Cafe & Bakery</h1>
+					<img
+						className="lloyds-logo"
+						src="../public/assets/img/lloyds-320px.jpg"
+						alt="Lloyd's Cafe & Bakery"
+					/>
 					<nav>
 						<ul>
 							<li>
@@ -34,6 +38,15 @@ function App() {
 						</ul>
 					</nav>
 				</header>
+				<div className="lloyd-portrait-container">
+					<h1>Lloyd&apos;s Cafe & Bakery</h1>
+					<img
+						className="lloyd-portrait"
+						src="../public/assets/img/lloyd.jpg"
+						alt="a portrait shot of lloyd"
+					/>
+					<article></article>
+				</div>
 			</main>
 		</>
 	);

@@ -264,20 +264,48 @@ html {
   overflow: hidden;
 }
 
-body {
-  background: #444;
-  color: #25973d;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h1 {
-  background-color: rgba(255, 255, 255, 0.768627451);
+.lloyds-logo {
+  margin-top: 1rem;
   border-radius: 50%;
-  text-align: center;
+  max-width: 10rem;
+}
+
+nav {
+  margin-top: 3rem;
+}
+
+nav ul {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul a {
+  color: #258132;
+  background-color: #000000;
+  text-decoration: none;
   padding: 1rem;
+  border-radius: 20%;
+}
+nav ul a:hover {
+  background-color: #363636;
+}
+
+body {
+  color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 .background-video-container {
@@ -295,4 +323,19 @@ h1 {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
+}
+
+.lloyd-portrait-container {
+  display: flex;
+  justify-content: center;
+}
+.lloyd-portrait-container h1 {
+  position: absolute;
+  bottom: 35rem;
+  text-align: center;
+}
+
+.lloyd-portrait {
+  position: absolute;
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */

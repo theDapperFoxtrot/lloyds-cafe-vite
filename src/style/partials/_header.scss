@@ -1,0 +1,35 @@
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.lloyds-logo {
+	margin-top: 1rem;
+	border-radius: 50%;
+	max-width: 10rem;
+}
+
+nav {
+	margin-top: 3rem;
+}
+
+nav ul {
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	padding: 0;
+}
+
+nav ul a {
+	color: $primary-color;
+	background-color: $secondary-color;
+	text-decoration: none;
+	padding: 1rem;
+	border-radius: 20%;
+
+	&:hover {
+		background-color: #363636;
+	}
+}

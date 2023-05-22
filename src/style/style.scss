@@ -1,19 +1,14 @@
 @import "./partials/setup";
+@import "./partials/config";
+@import "./partials/header";
 
 body {
-	background: #444;
-	color: #25973d;
+	color: #000;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-h1 {
-	background-color: #ffffffc4;
-	border-radius: 50%;
-	text-align: center;
-	padding: 1rem;
+	overflow-x: hidden;
 }
 
 .background-video-container {
@@ -30,4 +25,20 @@ h1 {
 	height: 100vh;
 	object-fit: cover;
 	z-index: -1;
+}
+
+.lloyd-portrait-container {
+	display: flex;
+	justify-content: center;
+
+	h1 {
+		position: absolute;
+		bottom: 35rem;
+		text-align: center;
+	}
+}
+
+.lloyd-portrait {
+	position: absolute;
+	bottom: 0;
 }
