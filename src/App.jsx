@@ -12,7 +12,7 @@ function App() {
 					muted
 				>
 					<source
-						src="../public/assets/img/lloyd-coffee.mp4"
+						src="assets/img/lloyd-coffee.mp4"
 						type="video/mp4"
 					/>
 				</video>
@@ -21,7 +21,7 @@ function App() {
 				<header>
 					<img
 						className="lloyds-logo"
-						src="../public/assets/img/lloyds-320px.jpg"
+						src="assets/img/lloyds-320px.jpg"
 						alt="Lloyd's Cafe & Bakery"
 					/>
 					<nav>
@@ -42,7 +42,7 @@ function App() {
 					<h1>Lloyd&apos;s Cafe & Bakery</h1>
 					<img
 						className="lloyd-portrait"
-						src="../public/assets/img/lloyd.jpg"
+						src="assets/img/lloyd.jpg"
 						alt="a portrait shot of lloyd"
 					/>
 					<article></article>
